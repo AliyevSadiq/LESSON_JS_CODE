@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="main_function.js"></script>
+    <title>JS LESSON CODES</title>
+</head>
+<body>
+
+<script>
+
+//CREATE EMPTY BOOK1 OBJECT
+var book1={};
+//CREATE PARAMETERS WITH VALUE IN BOOK1 OBJECT
+book1.title='Book1';
+book1.pubYear='15.03.2019';
+book1.price=20;
+//CREATE METHOD SHOW WITH ANONYMOUS FUNCTION
+book1.show=function () {
+       print("Book " + this.title + " price is " + this.price);
+  };
+function showBook() {
+    print("Book " + this.title + " price is " + this.price);
+};
+
+
+book1.show();
+
+//CREATE BOOK2 OBJECT WITH PARAMETERS AND VALUES
+//ADD METHOD SHOW WITH showBook FUNCTION
+var book2={'title':'Book2','pubYear':'16.03.2019','price':21,show:showBook};
+book2.show();
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

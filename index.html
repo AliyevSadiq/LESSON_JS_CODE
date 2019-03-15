@@ -5,33 +5,25 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="main_function.js"></script>
     <title>JS LESSON CODES</title>
 </head>
 <body>
 
 <script>
 
-  var lines=4;
-var star,space;
-var stars,spaces;
 
-for(var curLine=1;curLine<=lines;curLine++){
-
-
-    space= lines-curLine;
-    spaces=' ';
-    for(var i=0;i<space;i++){
-    spaces += ' ';
-    }
-
-    star= curLine*2-1;
-    stars='';
-    for(var j=0;j<star;j++){
-        stars += '*';
-    }
-    console.log(spaces+stars);
-
-
+//CREATE USER OBJECT
+var user = {'name':'','age':23,'test':'test'};
+//add value to name parameter
+user.name='Sadiq';
+//name parameter of USER object
+print(user.name);
+//delete test parameter from user
+delete user.test;
+//print parameters of USER object
+for(var param in user){
+    print(param + ": " + user[param]);
 }
 
 
