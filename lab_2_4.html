@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS LESSON CODES</title>
+</head>
+<body>
+
+<script>
+
+  var lines=4;
+var star,space;
+var stars,spaces;
+
+for(var curLine=1;curLine<=lines;curLine++){
+
+
+    space= lines-curLine;
+    spaces='';
+    for(var i=0;i<space;i++){
+    spaces += ' ';
+    }
+
+    star= curLine*2-1;
+    stars='';
+    for(var j=0;j<star;j++){
+        stars += '*';
+    }
+    console.log(spaces+stars);
+
+
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>
