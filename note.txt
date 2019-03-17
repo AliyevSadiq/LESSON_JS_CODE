@@ -1,0 +1,5 @@
+pop() funksiyası massivin sonuncu elementini massivdən çıxardır
+push() funksiyası massivə yeni element əlavə edir
+shift() funksiyası massivin birinci elementini massivdən çıxardır
+unshift() funksiyası massivin əvvəlinə yeni element əlavə edir
+splice(n,count) funksiyası n-ci indexdən count sayda elementləri massivdən silir
