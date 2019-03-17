@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="main_function.js"></script>
+    <title>JS LESSON CODES</title>
+</head>
+<body>
+
+<script>
+
+
+strPad('star',69,'*-','RIGHT');
+strPad('star',70,'*-','RIGHT');
+strPad('star',71,'*-','RIGHT');
+
+function strPad(input,fullLen,fillStr,fillType) {
+
+
+
+    var str_len=input.length;
+    var output='';
+    var new_str='';
+    if(fullLen>str_len){
+        if(fillType!=='BOTH') {
+            for (var i = 0; i < fullLen - str_len; i++) {
+                output += fillStr;
+            }
+        }
+    }
+        new_str=input+output;
+    if(new_str.length>fullLen){
+       output=output.substring(new_str.length-fullLen);
+    }
+
+    if(fillType=='RIGHT'){
+        new_str=input+output;
+    }
+    if(fillType=='LEFT'){
+        new_str=output+input;
+    }
+
+    print(new_str);
+
+
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>

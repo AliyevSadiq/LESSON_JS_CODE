@@ -3,3 +3,32 @@ push() funksiyası massivə yeni element əlavə edir
 shift() funksiyası massivin birinci elementini massivdən çıxardır
 unshift() funksiyası massivin əvvəlinə yeni element əlavə edir
 splice(n,count) funksiyası n-ci indexdən count sayda elementləri massivdən silir
+toFixed(n) funksiyası onluq kəsrlərdə nöqtədən sonra gələn n sayda rəqəmi saxlayır
+concat() funsiiyası her hansı bir setire diger setirleri birleşdirir
+indexOf(str) ve lastIndexOf(str) funksiyalari sozde ve ya cumlede str-in indexini tapir
+
+
+
+REGEX YAZILISH QAYDALARINA AID NUMUNELER
+
+/str1|str2/ BAXILAN SOZDE YA str1, YADA str2-IN OLMASI
+/str{n}/ BAXILAN SOZDE str-IN EN AZI N SAYDA OLMASI
+/str{n,}/ BAXILAN SOZDE str-IN N-DEN COX SAYDA OLMASI
+/str{n,m}/ BAXILAN SOZDE str-IN N-DEN COX, M-DEN AZ SAYDA OLMASI
+/\symbol/ BAXILAN SOZDE SYMBOL PARAMETRININ YERINE OLA BILECEK SIMVOLUN OLMASI
+/[abc]/ BAXILAN SOZDE abc SIMVOLLARDAN BIRININ OLMASI
+
+/^abc/ BAXILAN SOZUN abc SIMVOLLARDAN BIRI ILE BASLMASI
+/$abc/ BAXILAN SOZUN abc SIMVOLLARDAN BIRI ILE QURTARMASI
+
+/[^abc]/ BAXILAN SOZDE abc SIMVOLLARININ HEC BIRININ OLMAMASI
+/[a-z]/ BAXILAN SOZDE ANCAQ LATIN ELIFBASININ KICIK HERFLERININ OLMASI
+/[A-Z]/ BAXILAN SOZDE ANCAQ LATIN ELIFBASININ BOYUK HERFLERININ OLMASI
+/[0-9]/ BAXILAN SOZDE ANCAQ REQEMLERIN OLMASI
+
+REGEXDE BIR-BIRINI EVEZ EDE BILECEK QAYDALAR
+
+/\w/ =>  /[a-zA-Z0-9_]/
+/\W/ =>  /[^a-zA-Z0-9_]/
+/\d/ =>  /[0-9]/
+/\D/ =>  /[^0-9]/

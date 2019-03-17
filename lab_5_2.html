@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="main_function.js"></script>
+    <title>JS LESSON CODES</title>
+</head>
+<body>
+
+<script>
+
+
+subStrCount("Good Golly Miss Molly",'ll',7,2);
+
+  function subStrCount(input,needle,offset,length) {
+
+    let new_text =input.substring(offset,offset+length);
+
+    new_text=new_text.split(" ");
+
+    for(let item in new_text){
+        if(new_text[item].indexOf(needle)>-1){
+            print(new_text[item]);
+        }
+
+    }
+
+  }
+
+
+
+</script>
+
+
+</body>
+</html>
