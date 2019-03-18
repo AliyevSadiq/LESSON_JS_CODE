@@ -7,6 +7,8 @@ toFixed(n) funksiyası onluq kəsrlərdə nöqtədən sonra gələn n sayda rəq
 concat() funsiiyası her hansı bir setire diger setirleri birleşdirir
 indexOf(str) ve lastIndexOf(str) funksiyalari sozde ve ya cumlede str-in indexini tapir
 
+e instanceof OBJECT => BURADA instanceof PARAMETRI e OBYEKTININ TIPI OLARAQ OBJECT-I YOXLAYIR VE TRUE YADA FALSE QAYTARIR
+
 
 
 REGEX YAZILISH QAYDALARINA AID NUMUNELER

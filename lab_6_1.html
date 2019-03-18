@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="main_function.js"></script>
+    <title>JS LESSON CODES</title>
+</head>
+<body>
+
+<script>
+
+function Book(title,pubYear,price) {
+    this.title=title;
+    this.pubYear=pubYear;
+    this.price=price;
+}
+
+var book=new Book('Book1','2019','20 AZN');
+    
+book.constructor.prototype.show=function () {
+    print("Book "+this.title+" price is "+this.price);
+};
+
+book.show();
+
+</script>
+
+
+</body>
+</html>
