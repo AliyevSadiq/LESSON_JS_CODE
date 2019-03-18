@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="main_function.js"></script>
+    <title>JS LESSON CODES</title>
+</head>
+<body>
+
+<script>
+
+function Dictionary(startValues) {
+
+this.values= startValues || {};
+}
+
+Dictionary.prototype.set=function (key,value) {
+    this.values[key]=value;
+};
+
+Dictionary.prototype.get=function (key) {
+    return this.values[key];
+};
+
+var dic=new Dictionary();
+dic.set('name','Sadiq');
+dic.set('age',24);
+dic.set('role','admin');
+dic.set('jobs','Developer');
+
+ print(dic.get('age'));
+
+
+
+</script>
+
+
+</body>
+</html>
